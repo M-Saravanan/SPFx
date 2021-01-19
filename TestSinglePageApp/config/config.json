@@ -1,0 +1,36 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "test-single-page-app-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/testSinglePageApp/TestSinglePageAppWebPart.js",
+          "manifest": "./src/webparts/testSinglePageApp/TestSinglePageAppWebPart.manifest.json"
+        },
+        {
+          "entrypoint": "./lib/webparts/listForm/ListFormWebPart.js",
+          "manifest": "./src/webparts/listForm/ListFormWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {
+    "jquery": {
+      "path": "node_modules/jquery/dist/jquery.min.js",
+      "globalName": "jQuery"
+    },
+    "bootstrap": {
+      "path": "node_modules/bootstrap/dist/js/bootstrap.min.js",
+      "globalName": "jQuery"
+    }
+  },
+  "localizedResources": {
+    "TestSinglePageAppWebPartStrings": "lib/webparts/testSinglePageApp/loc/{locale}.js",
+    "ListFormWebPartStrings": "lib/webparts/listForm/loc/{locale}.js",
+    "ListFormStrings": "lib/webparts/listForm/components/loc/{locale}.js",
+    "FormFieldStrings": "lib/webparts/listForm/components/formFields/loc/{locale}.js",
+    "servicesStrings": "lib/common/services/loc/{locale}.js",
+    "ControlStrings": "node_modules/@pnp/spfx-controls-react/lib/loc/{locale}.js"
+  }
+}

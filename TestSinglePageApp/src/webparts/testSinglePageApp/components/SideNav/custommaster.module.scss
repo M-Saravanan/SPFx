@@ -1,0 +1,80 @@
+
+.sideNavBox {
+    z-index: 1000;
+    position: fixed;
+    height: 100%;
+    width: 55px;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    margin: 0px;
+    float: left;
+    position: absolute;
+}
+
+.main-menu {
+    background: #333333;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    width: 55px;
+    overflow: hidden;
+    -webkit-transition: width .2s linear;
+    transition: width .2s linear;
+    box-shadow: 1px 0 15px rgba(0, 0, 0, 0.07);
+    opacity: 1;
+}
+
+.scrollbar {
+    height: 100%;
+    width: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.sidebar-nav {
+    font-family: 'Work Sans' !important;
+    font-size: 14px !important;
+}
+
+nav ul, nav li {
+    outline: 0;
+    margin: 0;
+    padding: 0;
+}
+
+.round.round-sm {
+    height: 26px;
+    width: 26px;
+    line-height: 26px;
+    -moz-border-radius: 13px;
+    border-radius: 13px;
+    font-size: 0.8em;
+    margin-left: 14px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    color: white;
+    font-size: 12px;
+}
+
+.CustomBackColor {
+    background-color: #0072c6 !important;
+}
+
+.contentBox {
+    padding-left: 55px;
+    padding-top: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    min-width: 703px;
+    min-height: 400px;
+    width:100%;
+}
+
+.dialogContainer
+{
+    border: 0px;
+}
